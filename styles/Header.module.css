@@ -1,0 +1,50 @@
+/* container of all header class element */
+header.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px 35px 0px;
+  flex-wrap: wrap;
+  letter-spacing: 0.5px;
+  font-family: "Inter";
+}
+/* header log to the left */
+div.headerlogo {
+  flex: 0 1 20%;
+  color: #46b1ccb2;
+  font-weight: 800;
+  font-size: 1.8rem;
+  font-family: "Kanit";
+}
+/* headerlinks to the right */
+ul.headerlinks {
+  display: flex;
+  flex: 0 1 100%;
+  max-width: 720px;
+  justify-content: space-around;
+  padding-left: 0px;
+  /* width: 350px; */
+  color: #32322eca;
+  margin-top: 45px;
+  font-size: 1.05rem;
+}
+@media screen and (min-width: 600px) {
+  ul.headerlinks {
+    flex: 0 1 50%;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+}
+ul.headerlinks li {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 8px;
+    transition: border-bottom 0.2s, color 0.3s;
+}
+.active {
+  border-bottom: 3px solid #46b1ccb2 !important;
+}
+
+ul.headerlinks li:hover {
+  color: #8a8a8281;
+  border-bottom: 3px solid #fff;
+}

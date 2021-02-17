@@ -1,0 +1,96 @@
+/* Flex Container
+    
+*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 98%;
+  height: 60vh;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    width: 85%;
+    height: 80vh;
+  }
+}
+
+.card {
+  /* Card Flex Container */
+  display: flex;
+  width: 100%;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 860px;
+}
+@media screen and (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+.cardDescription {
+  /* 1 of 2 in card - flex container */
+  flex: 1;
+
+  text-align: center;
+  line-height: 1.7;
+  font: 0.95rem "Inter";
+  letter-spacing: 0.3px;
+}
+@media screen and (min-width: 600px) {
+  .cardDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.2rem;
+  }
+}
+.cardDescription p {
+  margin: 0px;
+  color: #32322eaf;
+  font-weight: 300;
+}
+
+.cardDescription p span {
+  color: #32322e7e;
+  font-weight: 300;
+}
+.cardDescription p span:hover {
+  color: #9b9b93;
+}
+@media screen and (min-width: 600px) {
+  .cardDescription p span {
+    font-size: 1.35rem;
+  }
+}
+.cardImg {
+  /* 2 0f 2 in card - container - flex container */
+  flex: 1;
+  text-align: center;
+  margin-top: 10px;
+}
+@media screen and (min-width: 600px) {
+  .cardImg {
+    flex: 0 1 40%;
+  }
+}
+
+.cardImg img {
+  width: 200px;
+  border-right: 5px solid #1b85a088;
+  transition: box-shadow 0.3s;
+}
+.cardImg img:hover {
+  box-shadow: 0 0 20px #9b9b93;
+}
+.cardBottomBorder {
+  height: 1px;
+  width: 70%;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
