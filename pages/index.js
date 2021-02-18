@@ -6,8 +6,6 @@ import {
   FaMedium,
   FaCodepen,
 } from "react-icons/fa";
-import Link from "next/link";
-import { useRouter } from "next/router";
 
 const socialLinks = [
   {
@@ -38,7 +36,6 @@ const socialLinks = [
 ];
 
 export default function Home() {
-  const router = useRouter();
 
   return (
     <div>
@@ -48,23 +45,23 @@ export default function Home() {
         <p>
           Hey, I'm Keith Carrillo.
           <br />
-          I'm passionate about eCommerce applications experiences that could
-          potentially have a great affect on many users. In my spare time I
-          enjoy talking with other developers on twitter, learning and
-          communicating about new trends or new solutions.
+          I'm passionate about eCommerce application experiences that could
+          potentially have a great affect on many users.
+          <br />
+          In my spare time I enjoy talking with other developers on twitter,
+          learning and communicating about new trends or new solutions.
           <br />
           I’m hoping to join a team that I can share ideas with, learn from and
           potentially grow with as a team member.
+          <ul className={styles.sociallinks}>
+            {socialLinks.map((value) => (
+              <li key={value.name}>
+                <a href={value.link}>{value.name}</a>
+                {value.component}
+              </li>
+            ))}
+          </ul>
         </p>
-
-        <ul className={styles.sociallinks}>
-          {socialLinks.map((value) => (
-            <li key={value.name}>
-              <a href={value.link}>{value.name}</a>
-              {value.component}
-            </li>
-          ))}
-        </ul>
       </div>
       {/* EO Container */}
     </div>

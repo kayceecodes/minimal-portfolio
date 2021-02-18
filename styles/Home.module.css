@@ -17,7 +17,7 @@
 
   letter-spacing: 0.5px;
   font-family: 'Inter';
-  color: #32322eaf;
+  color: #32322e81;
   line-height: 1.9;
   font-size: 1.1rem;
 }
@@ -26,21 +26,15 @@
     line-height: 2;
     font-size: 1.4rem;
     max-width: 1000px;
-    margin: 0px auto 0 30px;
+    margin: 0px auto;
   }
 }
 
 .sociallinks {
-  padding-left: 35px;
-  margin-top: 0px;
+  /* padding-left: 35px; */
+  margin-top: 35px;
   line-height: 1.8;
   color: #55554fc2;
-}
-@media screen and (min-width: 600px) {
-  .sociallinks {
-    margin-left: 55px;
-    margin-top: 40px;
-  }
 }
 
 .sociallinks li {

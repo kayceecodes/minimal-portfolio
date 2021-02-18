@@ -20,14 +20,15 @@ const projects = [
 ];
 
 export default function Projects() {
+
   return (
     <div className={styles.container}>
-      {projects.map((project, index, array) => (
-        <>
-          <Card key={project.name} project={project} />
+      {projects.map((project) => (
+        <React.Fragment key={project.name}> 
+          <Card project={project} />
 
           <div className={styles.cardBottomBorder} />
-        </>
+        </React.Fragment>
       ))}
     </div>
   );
