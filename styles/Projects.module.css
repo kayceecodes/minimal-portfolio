@@ -92,7 +92,10 @@
 }
 .cardBottomBorder {
   height: 1px;
-  width: 780px;
+  width: 200px;
   background-color: #fff;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 960px) {
+  .cardBottomBorder {width: 785px}
 }

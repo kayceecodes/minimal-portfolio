@@ -45,13 +45,16 @@ export default function Home() {
         <p>
           Hey, I'm Keith Carrillo.
           <br />
-          I'm passionate about eCommerce application experiences that could
+          <br />
+          I'm passionate about team managment and eCommerce application experiences that could
           potentially have a great affect on many users.
+          <br />
           <br />
           In my spare time I enjoy talking with other developers on twitter,
           learning and communicating about new trends or new solutions.
           <br />
-          I’m hoping to join a team that I can share ideas with, learn from and
+          <br />
+          I’m hoping to join a team that I can share ideas with, learn from, and
           potentially grow with as a team member.
           <ul className={styles.sociallinks}>
             {socialLinks.map((value) => (

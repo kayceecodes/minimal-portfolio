@@ -4,7 +4,7 @@
   justify-content: center;
   margin: 0 auto;
   width: 90%;
-  height: 80vh;
+  height: 90vh;
 }
 @media screen and (min-width: 600px) {
   .container {
@@ -24,7 +24,7 @@
 @media screen and (min-width: 600px) {
   .container p {
     line-height: 2;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     max-width: 1000px;
     margin: 0px auto;
   }
@@ -35,6 +35,7 @@
   margin-top: 35px;
   line-height: 1.8;
   color: #55554fc2;
+  margin-right: 85px;
 }
 
 .sociallinks li {
@@ -45,6 +46,7 @@
   font: .85rem 'Inter';
   letter-spacing: 0.5px;
   transition: color 0.15s;
+  margin-left: auto;
 }
 @media screen and (min-width: 600px) {
   .sociallinks li {
