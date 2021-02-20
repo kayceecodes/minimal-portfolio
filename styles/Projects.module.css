@@ -70,6 +70,7 @@
 .cardImg {
   /* 2 0f 2 in card - container - flex container */
   flex: 1;
+  position: relative;
   text-align: center;
   margin-top: 10px;
 }
@@ -81,7 +82,9 @@
   box-shadow: 0 0 20px #9b9b93;
   border-right: 5px solid #fff;
 }
-
+.card:hover .cardDescription span:first-child {
+  text-decoration: underline;
+}
 .cardImg img {
   width: 200px;
   border-right: 5px solid #1b85a088;
@@ -98,4 +101,13 @@
 }
 @media screen and (min-width: 960px) {
   .cardBottomBorder {width: 785px}
+}
+ 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #00000050;
 }
