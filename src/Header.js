@@ -22,8 +22,13 @@ export default function Header() {
         <li className={router.asPath === '/' ? styles.active : ''}>
           <Link href="/">Home</Link>
         </li>
+        <li className={styles.border} />
         <li className={router.asPath === '/projects' ? styles.active : ''}>
           <Link href="/projects">Projects</Link>
+        </li>
+        <li className={styles.border} />
+        <li className={router.asPath === '/blogs' ? styles.active : ''}>
+          <Link href="/blogs">Blogs</Link>
         </li>
       </ul>
     </header>

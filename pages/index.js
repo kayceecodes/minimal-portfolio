@@ -43,7 +43,7 @@ export default function Home() {
       its centered margins textaling left */}
       <div className={styles.container}>
         <p>
-          Hey, I'm Keith Carrillo.
+          <span className={styles.greet}>Hey, I'm Keith Carrillo.</span>
           <br />
           <br />
           I'm passionate about team managment and eCommerce application experiences that could

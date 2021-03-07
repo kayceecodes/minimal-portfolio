@@ -47,5 +47,9 @@ ul.headerlinks li {
 
 ul.headerlinks li:hover {
   color: #8a8a8281;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #ffffff;
+}
+
+ul.headerlinks li.border {
+  border: 1px solid #b9bfc25b;
 }
