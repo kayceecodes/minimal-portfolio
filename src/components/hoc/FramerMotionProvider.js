@@ -17,15 +17,15 @@ const FramerMotionProvider = ({ children }) => {
             variants: {
               initial: {
                 opacity: 0,
-                scale: 1
+                // scale: 1
               },
               in: {
                 opacity: 1,
-                scale: .98,
+                // scale: .98,
               },
               out: {
                 opacity: 0,
-                scale: .90,
+                // scale: .90,
               },
             },
             transition: {
