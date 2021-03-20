@@ -41,7 +41,7 @@
   transition: color 0.3s;
 }
 .card:hover div p.header .title  {
-  color: #46b1ccb2;
+  color: #40a1b9;
 }
 
 .container .card p {
