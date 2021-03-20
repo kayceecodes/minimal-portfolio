@@ -81,7 +81,7 @@ a.cardContainer {
   color: #ab9b93;
 }
 .card:hover .cardDescription p span {
-  color: #fff;
+  color: #40a1b9;
   text-shadow: 0px 0px 20px #5d5d5d65;
 }
 .cardImg {
