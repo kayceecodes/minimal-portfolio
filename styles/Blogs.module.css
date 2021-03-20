@@ -37,6 +37,13 @@
   border: 0.5px solid #32322e23;
   box-shadow: 0 0 8px #9b9b9328;
 }
+.card div p.header .title {
+  transition: color 0.3s;
+}
+.card:hover div p.header .title  {
+  color: #46b1ccb2;
+}
+
 .container .card p {
   letter-spacing: 0.5px;
   font-family: "Inter";
@@ -77,4 +84,3 @@
   color: #5e5e5767;
   margin-left: 15px;
 }
-

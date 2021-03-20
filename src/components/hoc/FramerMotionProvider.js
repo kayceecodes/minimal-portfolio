@@ -9,7 +9,7 @@ const FramerMotionProvider = ({ children }) => {
             overflow: "hidden",
           },
           motions: {
-            initial: "out",
+            initial: "initial",
             animate: "in",
             exit: "out",
           },
