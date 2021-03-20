@@ -8,14 +8,14 @@ const projects = [
     name: "Benson Bracelets",
     link: "https://kcee403.github.io/bensonbracelets/",
     host: "Github Pages",
-    stack: "TS Next.js Redux Material-ui & Shopify",
+    stack: "Typescript Next.js Redux Material-ui & Shopify",
     src: "/assets/images/projects/bensonbracelets.jpg",
   },
   {
     name: "Chat-App",
     link: "https://kcee403.github.io/Chat-App",
     host: "Github Pages",
-    stack: "TS React Redux Firebase Enzyme & Jest",
+    stack: "Typescript React Redux Firebase Enzyme & Jest",
     src: "/assets/images/projects/chat-app.jpg",
   },
 ];

@@ -35,12 +35,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # nextjs-portfolio
 
 ## To Do
-    1). Add blog details and links
-    2). Page Animations
-    3). A second line with animation under 'keith' logo
-    4). Add spacing between Project Cards
-    5). Add Line around Project Cards
-    6). Remove Underline hover on Project Cards
-    7). 'p' tags cannot appear inside 'ul' tags
-    8). Make Cards for Blogs.
-    9). Blog Card Link space is too big.
+    1)X  Add blog details and links
+    2)X  Page Animations
+    3)X  A second line with animation under 'keith' logo
+    4)X  Add spacing between Project Cards
+    5)X  Add Line around Project Cards
+    6)X  Remove Underline hover on Project Cards
+    7)X  'p' tags cannot appear inside 'ul' tags
+    8)X  Make Cards for Blogs.
+    9)X  Blog Card Link space is too big.
+    10)X Add a seperate Card - Blog Component with blogs objects.
+    11). Start Footer
+    12). Add see more text with opacity.
+    13). Create ListItem Component for each Items

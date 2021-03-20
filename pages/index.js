@@ -74,7 +74,7 @@ export default function Home(props) {
               {socialLinks.map((value) => (
                 <li key={value.name}
                     style={{
-                      transition: `all ${value.timer}ms`
+                      transition: `transform ${value.timer}ms, color 0.3s`
                     }}
                     data-aos='fade-right'
                   >

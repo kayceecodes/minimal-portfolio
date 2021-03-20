@@ -45,7 +45,6 @@ const routes = [
 export default function Header() {
   useEffect(() => {
     Aos.init({
-      duration: 800,
     });
   });
 
@@ -55,17 +54,15 @@ export default function Header() {
         <span>keith</span>
       </div>
       <ul className={styles.headerlinks}>
-        {routes.map((route, index, array) => {
-          return (
+        {routes.map((route, index, array) => 
             <ListItem
+              key={index}
               path={route.path}
               name={route.name}
-              key={index}
               index={index}
               array={array}
             />
-          );
-        })}
+          )}
       </ul>
     </header>
   );

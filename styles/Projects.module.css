@@ -48,7 +48,7 @@ a.cardContainer {
 
   text-align: center;
   line-height: 1.7;
-  font: 0.95rem "Inter";
+  font-family: "Inter";
   letter-spacing: 0.3px;
 }
 @media screen and (min-width: 600px) {
@@ -57,21 +57,25 @@ a.cardContainer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 }
-.cardDescription p {
-  margin: 0px;
+.cardDescription p { /* Both Title & Details( Tech Stack ) */
+  margin: 8px 0;
   color: #32322eaf;
   font-weight: 300;
-}
-
-.cardDescription p span {
-  color: #32322e78;
-  font-weight: 300;
+  font-size: 0.95rem;
 }
 @media screen and (min-width: 600px) {
-  .cardDescription p span {font-size: 1.35rem;}
+  .cardDescription p  {font-size: 1.15rem;}
+}
+.cardDescription p span { /* Title */
+  color: #32322e78;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 600px) {
+  .cardDescription p span {font-size: 1.45rem;}
 }
 .cardDescription p span:hover {
   color: #ab9b93;
