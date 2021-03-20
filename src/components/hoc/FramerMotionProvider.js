@@ -26,9 +26,9 @@ const FramerMotionProvider = ({ children }) => {
               },
             },
             transition: {
-              type: "tween", // Tween: animation that looks like it's evolving/transforming into something else
-              ease: "linear",
-              duration: 0.35,
+              // type: "spring", // Tween: animation that looks like it's evolving/transforming into something else
+              // ease: "linear",
+              duration: 0.05,
             },
           }
     }
