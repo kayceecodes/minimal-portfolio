@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import MotionContainer from "../src/components/hoc/MotionContainer";
 import Card from "../src/components/blogs/Card";
+import { motion } from "framer-motion";
 
 const blogs = [
   {
@@ -16,10 +17,28 @@ const blogs = [
 
 export default function Blog(props) {
   return (
-    <MotionContainer pageAnimations={props.pageAnimations}>
-      {blogs.map((blog) => 
+    // <MotionContainer pageAnimations={props.pageAnimations}>
+    <motion.div
+      initial='initial'
+      animate='in'
+      exit='out'
+      variants={{
+        initial: {
+          opacity: 0,
+        },
+        in: {
+          opacity: 1,
+        },
+        out: {
+          opacity: 0,
+        },
+      }}
+      transition={{transition: {duration: .2},}}
+    >
+      {blogs.map((blog) => (
         <Card key={blog.title} blog={blog} />
-      )}
-    </MotionContainer>
+      ))}
+    </motion.div>
+    // </MotionContainer>
   );
 }

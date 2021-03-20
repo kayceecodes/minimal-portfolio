@@ -10,6 +10,7 @@ import {
 import MotionContainer from "../src/components/hoc/MotionContainer";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import {motion} from 'framer-motion'
 
 const socialLinks = [
   {
@@ -52,7 +53,24 @@ export default function Home(props) {
   });
 
   return (
-    <MotionContainer pageAnimations={props.pageAnimations}>
+    //<MotionContainer pageAnimations={props.pageAnimations}>
+    <motion.div
+   initial='initial'
+   animate='in'
+   exit='out'
+   variants={{
+     initial: {
+       opacity: 0,
+     },
+     in: {
+       opacity: 1,
+     },
+     out: {
+       opacity: 0,
+     },
+   }}
+   transition={{transition: {duration: .2},}}
+ >
       <div>
         {/* Container of everything below header, 
       its centered margins textaling left */}
@@ -86,6 +104,7 @@ export default function Home(props) {
         </div>
         {/* EO Container */}
       </div>
-    </MotionContainer>
+      </motion.div>
+    // </MotionContainer>
   );
 }
