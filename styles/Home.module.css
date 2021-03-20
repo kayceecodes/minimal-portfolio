@@ -56,12 +56,12 @@ span.greet {
   font: 0.85rem "Inter";
   letter-spacing: 0.5px;
   transition: color 0.15s;
-  margin-left: auto;
-  margin-bottom: 5px;
+  margin: 7px 0 7px auto
 }
 @media screen and (min-width: 600px) {
   .sociallinks li {
     font-size: 1.1rem;
+    margin: 12px 0 12px auto;
   }
 }
 .sociallinks li:hover {

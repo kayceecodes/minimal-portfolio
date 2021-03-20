@@ -33,3 +33,14 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # nextjs-portfolio
+
+## To Do
+    1). Add blog details and links
+    2). Page Animations
+    3). A second line with animation under 'keith' logo
+    4). Add spacing between Project Cards
+    5). Add Line around Project Cards
+    6). Remove Underline hover on Project Cards
+    7). 'p' tags cannot appear inside 'ul' tags
+    8). Make Cards for Blogs.
+    9). Blog Card Link space is too big.

@@ -1,6 +1,7 @@
 import React from "react";
-import Card from "../src/projects/Card";
+import Card from "../src/components/projects/Card";
 import styles from "../styles/Projects.module.css";
+import MotionContainer from "../src/components/hoc/MotionContainer";
 
 const projects = [
   {
@@ -19,17 +20,22 @@ const projects = [
   },
 ];
 
-export default function Projects() {
+export default function Projects(props) {
 
   return (
-    <div className={styles.container}>
-      {projects.map((project) => (
-        <React.Fragment key={project.name}> 
-          <Card project={project} />
+    <MotionContainer pageAnimations={props.pageAnimations}>
+      <div className={styles.container}>
+        {projects.map((project, i) => (
+          <React.Fragment key={project.name+i}>
+            <Card
+              project={project}
+              key={project.name}
+            />
 
-          <div className={styles.cardBottomBorder} />
-        </React.Fragment>
-      ))}
-    </div>
+            <div className={styles.cardBottomBorder} />
+          </React.Fragment>
+        ))}
+      </div>
+    </MotionContainer>
   );
 }

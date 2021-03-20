@@ -1,27 +1,25 @@
 import React from "react";
-import styles from "../styles/Blogs.module.css";
+// import styles from "../styles/Blogs.module.css";
 import Image from "next/image";
+import MotionContainer from "../src/components/hoc/MotionContainer";
+import Card from "../src/components/blogs/Card";
 
-export default function Blog() {
+const blogs = [
+  {
+    title: "Sass is Far From Dead",
+    date: "Sept 6, 2017",
+    image: "/assets/images/blogs/sassfarfromdead.jpg",
+    link:
+      "https://medium.com/@justkeithcarr/sass-is-far-from-dead-8618b5f40577",
+  },
+];
+
+export default function Blog(props) {
   return (
-    <div className={styles.container}>
-      <div className={styles.card}>
-        <div className={styles.imgWrapper}>
-          <img src={"/assets/images/blogs/sassfarfromdead.jpg"} />
-        </div>
-        <section className={styles.border} />
-        <div>
-          <p className={styles.header}>
-            <span className={styles.title}>Sass is far from dead</span>
-            <small className={styles.date}>Sept 6, 2017</small>
-          </p>
-          <p className={styles.content}>
-            I’ve seen many advanced React users make a claim against the
-            preprocessor that state that styled components are the next big
-            thing for styling your sheets.
-          </p>
-        </div>
-      </div>
-    </div>
+    <MotionContainer pageAnimations={props.pageAnimations}>
+      {blogs.map((blog) => 
+        <Card key={blog.title} blog={blog} />
+      )}
+    </MotionContainer>
   );
 }

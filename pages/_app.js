@@ -1,8 +1,13 @@
-import Header from "../src/Header";
+import Header from "../src/ui/header/Header";
 import Head from "next/head";
 import "../styles/globals.css";
 
+import { AnimatePresence } from "framer-motion";
+import FramerMotionProvider from "../src/components/hoc/FramerMotionProvider";
+import { useRouter } from 'next/router'
+
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
   return (
     <>
       <Head>
@@ -18,7 +23,17 @@ function MyApp({ Component, pageProps }) {
         ></script>
       </Head>
       <Header />
-      <Component {...pageProps} />
+      <FramerMotionProvider>
+          {(props) => (
+            <AnimatePresence exitBeforeEnter>          
+                <Component
+                  {...pageProps}
+                  {...props}
+                  key={router.pathname}
+                />
+            </AnimatePresence>
+          )}
+        </FramerMotionProvider>
     </>
   );
 }

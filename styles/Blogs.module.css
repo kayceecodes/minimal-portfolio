@@ -1,13 +1,14 @@
 .container {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin: 100px auto 0;
   width: 90%;
-  height: 100vh;
+  /* height: 100vh; */
   flex-direction: column;
 }
 @media screen and (min-width: 600px) {
   .container {
+    margin: 0px auto 0;
     flex-direction: row;
   }
 }
@@ -23,13 +24,19 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 @media screen and (min-width: 960px) {
   .card {
     flex-direction: row;
   }
 }
-
+.card:hover {
+  border: 0.5px solid #32322e23;
+  box-shadow: 0 0 8px #9b9b9328;
+}
 .container .card p {
   letter-spacing: 0.5px;
   font-family: "Inter";

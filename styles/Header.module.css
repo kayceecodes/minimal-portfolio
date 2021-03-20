@@ -16,6 +16,9 @@ div.headerlogo {
   font-size: 1.8rem;
   font-family: "Kanit";
 }
+div.headerlogo span {
+  border-bottom: 3px solid #32322e13;
+}
 /* headerlinks to the right */
 ul.headerlinks {
   display: flex;
@@ -36,20 +39,28 @@ ul.headerlinks {
   }
 }
 ul.headerlinks li {
-    border-bottom: 3px solid transparent;
-    padding-bottom: 8px;
-    transition: border-bottom 0.2s, color 0.3s;
-    color: #32322ea8;
-  }
-.active {
-  border-bottom: 3px solid #46b1ccb2 !important;
+  /* border-bottom: 3px solid transparent; */
+  padding-bottom: 8px;
+  transition: border-bottom 0.2s, color 0.3s;
+  color: #32322ea8;
 }
 
 ul.headerlinks li:hover {
   color: #8a8a8281;
-  border-bottom: 3px solid #ffffff;
 }
 
 ul.headerlinks li.border {
-  border: 1px solid #b9bfc25b;
+  border: 1px solid #32322e13;
 }
+ul.headerlinks li.active {
+  border-bottom: 3px solid #46b1ccb2 !important;
+  margin-top: 5px;
+}
+ul.headerlinks li.underline {
+  margin-top: 5px;
+  border-bottom: 3px solid transparent !important; 
+}
+ul.headerlinks li:hover {
+  border-bottom: 3px solid #fff !important;
+}
+
