@@ -4,10 +4,11 @@ import "../styles/globals.css";
 
 import { AnimatePresence } from "framer-motion";
 import FramerMotionProvider from "../src/components/hoc/FramerMotionProvider";
-import { useRouter } from 'next/router'
-
+import { useRouter } from "next/router";
+import MotionContainer from "../src/components/hoc/MotionContainer";
+import { motion } from 'framer-motion'
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -24,16 +25,21 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Header />
       <FramerMotionProvider>
-          {(props) => (
-            <AnimatePresence exitBeforeEnter>          
-                <Component
-                  {...pageProps}
-                  {...props}
-                  key={router.pathname}
-                />
-            </AnimatePresence>
-          )}
-        </FramerMotionProvider>
+        {(props) => (
+          <AnimatePresence exitBeforeEnter>
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={props.pageAnimations.variants}
+              transition={props.pageAnimations.transition}
+              key={router.pathname}
+            >
+              <Component {...pageProps} {...props}  />
+            </motion.div>
+          </AnimatePresence>
+        )}
+      </FramerMotionProvider>
     </>
   );
 }

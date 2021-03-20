@@ -7,8 +7,9 @@ export default function MotionContainer(props) {
       initial="initial"
       animate="in"
       exit="out"
-      variants={props.pageAnimations.variants}
-      transition={props.pageAnimations.transition}
+      variants={props.pageAnimations?.variants}
+      transition={props.pageAnimations?.transition}
+      key={props.propKey}
     >
       {props.children}
     </motion.div>
