@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <FramerMotionProvider>
         {(props) => (
-          <AnimatePresence exitBeforeEnter>
+          <AnimatePresence>
             <motion.div
               initial="initial"
               animate="in"
