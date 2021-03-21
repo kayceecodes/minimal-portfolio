@@ -26,17 +26,11 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <FramerMotionProvider>
         {(props) => (
-          <AnimatePresence>
-            <motion.div
-              initial="initial"
-              animate="in"
-              exit="out"
-              variants={props.pageAnimations.variants}
-              transition={props.pageAnimations.transition}
+          <AnimatePresence exitBeforeEnter>            
+              <Component 
               key={router.pathname}
-            >
-              <Component {...pageProps} {...props}  />
-            </motion.div>
+              {...pageProps} 
+              {...props}  />
           </AnimatePresence>
         )}
       </FramerMotionProvider>

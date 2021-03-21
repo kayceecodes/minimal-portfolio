@@ -23,7 +23,7 @@ const projects = [
 export default function Projects(props) {
 
   return (
-   // <MotionContainer pageAnimations={props.pageAnimations}>
+   <MotionContainer pageAnimations={props.pageAnimations}>
    
       <div className={styles.container}>
         {projects.map((project, i) => (
@@ -37,6 +37,6 @@ export default function Projects(props) {
           </React.Fragment>
         ))}
       </div>
-    //</MotionContainer>
+    </MotionContainer>
   );
 }

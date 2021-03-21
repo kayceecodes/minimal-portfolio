@@ -2,12 +2,6 @@ import React from 'react'
 
 const FramerMotionProvider = ({ children }) => {
     const styleProps = {
-        pageStyle: {
-            position: "absolute",
-            width: "100%",
-            textAlign: "center",
-            overflow: "hidden",
-          },
           motions: {
             initial: "initial",
             animate: "out",
@@ -26,8 +20,8 @@ const FramerMotionProvider = ({ children }) => {
               },
             },
             transition: {
-              // type: "spring", // Tween: animation that looks like it's evolving/transforming into something else
-              // ease: "linear",
+              type: "tween", // Tween: animation that looks like it's evolving/transforming into something else
+              ease: "linear",
               duration: .2,
             },
           }

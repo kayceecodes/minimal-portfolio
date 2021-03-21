@@ -52,7 +52,7 @@ export default function Home(props) {
   });
 
   return (
-    //<MotionContainer pageAnimations={props.pageAnimations}>
+    <MotionContainer pageAnimations={props.pageAnimations}>
     
       <div>
         {/* Container of everything below header, 
@@ -87,6 +87,6 @@ export default function Home(props) {
         </div>
         {/* EO Container */}
       </div>
-    // </MotionContainer>
+    </MotionContainer>
   );
 }
