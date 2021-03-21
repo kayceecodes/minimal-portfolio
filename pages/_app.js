@@ -7,6 +7,11 @@ import { useRouter } from "next/router";
 import MotionContainer from "../src/components/hoc/MotionContainer";
 import { motion } from 'framer-motion'
 
+import Blog from './blogs'
+import Projects from './projects'
+import Home from './index'
+
+
 // Start of Fix - https://github.com/vercel/next.js/issues/17464
 import Router from "next/router";
 
