@@ -50,7 +50,7 @@ export default function Projects(props) {
   return (
    <MotionContainer pageAnimations={props.pageAnimations}>
    
-      <div style={style.container}>
+      <div className={styles.container}>
         {projects.map((project, i) => (
           <React.Fragment key={project.name+i}>
             <Card
@@ -62,6 +62,6 @@ export default function Projects(props) {
           </React.Fragment>
         ))}
       </div>
-    </MotionContainer>
+   </MotionContainer>
   );
 }

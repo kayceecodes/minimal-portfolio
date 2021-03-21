@@ -23,6 +23,6 @@ export default function Blog(props) {
         <Card key={blog.title} blog={blog} />
       ))}
     </motion.div>
-    </MotionContainer>
+    //</MotionContainer>
   );
 }

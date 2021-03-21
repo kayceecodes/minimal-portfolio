@@ -1,12 +1,34 @@
 import Header from "../src/ui/header/Header";
 import Head from "next/head";
 import "../styles/globals.css";
-
 import { AnimatePresence } from "framer-motion";
 import FramerMotionProvider from "../src/components/hoc/FramerMotionProvider";
 import { useRouter } from "next/router";
 import MotionContainer from "../src/components/hoc/MotionContainer";
 import { motion } from 'framer-motion'
+
+// Start of Fix - https://github.com/vercel/next.js/issues/17464
+import Router from "next/router";
+
+const routeChange = () => {
+  // Temporary fix to avoid flash of unstyled content
+  // during route transitions. Keep an eye on this
+  // issue and remove this code when resolved:
+  // https://github.com/vercel/next.js/issues/17464
+
+  const tempFix = () => {
+    const allStyleElems = document.querySelectorAll('style[media="x"]');
+    allStyleElems.forEach((elem) => {
+      elem.removeAttribute("media");
+    });
+  };
+  tempFix();
+};
+
+Router.events.on("routeChangeComplete", routeChange );
+Router.events.on("routeChangeStart", routeChange );
+// End Of Fix
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
