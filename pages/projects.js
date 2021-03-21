@@ -20,12 +20,37 @@ const projects = [
   },
 ];
 
+const style = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '50px auto',
+    width: '98%',
+    height: '60vh'
+  },
+  card: {
+    display: 'flex',
+    width: '100%',
+    flexWrap: 'wrap',
+    flexDirection: 'column',
+    margin: '0 auto',
+    maxWidth: '860px',
+    padding: '25px 0px',
+    border: '1px solid transparent',
+    borderRadius: '5px',
+    transition: 'all 0.3s',
+  }  
+}
+
+
 export default function Projects(props) {
 
   return (
    <MotionContainer pageAnimations={props.pageAnimations}>
    
-      <div className={styles.container}>
+      <div style={style.container}>
         {projects.map((project, i) => (
           <React.Fragment key={project.name+i}>
             <Card
