@@ -3,8 +3,8 @@ import styles from "../../../styles/Blogs.module.css";
 
 export default function Card(props) {
   return (
-    <a href={props.blog.link}>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <a href={props.blog.link}>
         <div className={styles.card}>
           <div className={styles.imgWrapper}>
             <img src={"/assets/images/blogs/sassfarfromdead.jpg"} />
@@ -21,7 +21,7 @@ export default function Card(props) {
             </p>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 }

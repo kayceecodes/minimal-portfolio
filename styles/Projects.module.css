@@ -6,14 +6,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 0px auto;
   width: 98%;
   height: 60vh;
 }
 @media screen and (min-width: 600px) {
   .container {
     width: 85%;
-    height: 80vh;
+    height: 70vh;
     margin: 0px auto;
   }
 }
@@ -62,7 +62,7 @@ a.cardContainer {
 }
 .cardDescription p { /* Both Title & Details( Tech Stack ) */
   margin: 8px 0;
-  color: #32322eaf;
+  color: #32322ed7;
   font-weight: 300;
   font-size: 0.95rem;
 }
@@ -70,7 +70,7 @@ a.cardContainer {
   .cardDescription p  {font-size: 1.15rem;}
 }
 .cardDescription p span { /* Title */
-  color: #32322e78;
+  color: #40a1b9;
   font-weight: 300;
   font-size: 1.1rem;
 }
@@ -81,8 +81,9 @@ a.cardContainer {
   color: #ab9b93;
 }
 .card:hover .cardDescription p span {
-  color: #40a1b9;
+  color: #378ea3;
   text-shadow: 0px 0px 20px #5d5d5d65;
+
 }
 .cardImg {
   /* 2 0f 2 in card - container - flex container */

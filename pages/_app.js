@@ -10,29 +10,7 @@ import { motion } from 'framer-motion'
 import Blog from './blogs'
 import Projects from './projects'
 import Home from './index'
-
-
-// Start of Fix - https://github.com/vercel/next.js/issues/17464
-import Router from "next/router";
-
-const routeChange = () => {
-  // Temporary fix to avoid flash of unstyled content
-  // during route transitions. Keep an eye on this
-  // issue and remove this code when resolved:
-  // https://github.com/vercel/next.js/issues/17464
-
-  const tempFix = () => {
-    const allStyleElems = document.querySelectorAll('style[media="x"]');
-    allStyleElems.forEach((elem) => {
-      elem.removeAttribute("media");
-    });
-  };
-  tempFix();
-};
-
-Router.events.on("routeChangeComplete", routeChange );
-Router.events.on("routeChangeStart", routeChange );
-// End Of Fix
+import Footer from '../src/ui/footer/Footer'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -61,6 +39,7 @@ function MyApp({ Component, pageProps }) {
           </AnimatePresence>
         )}
       </FramerMotionProvider>
+      <Footer />
     </>
   );
 }

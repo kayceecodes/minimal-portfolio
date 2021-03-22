@@ -18,11 +18,9 @@ const blogs = [
 export default function Blog(props) {
   return (
     <MotionContainer pageAnimations={props.pageAnimations}>
-    <motion.div>
       {blogs.map((blog) => (
         <Card key={blog.title} blog={blog} />
       ))}
-    </motion.div>
-    //</MotionContainer>
+    </MotionContainer>
   );
 }

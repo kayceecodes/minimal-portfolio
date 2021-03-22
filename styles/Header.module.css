@@ -7,6 +7,7 @@ header.header {
   flex-wrap: wrap;
   letter-spacing: 0.5px;
   font-family: "Inter";
+  margin-bottom: 120px;
 }
 /* header log to the left */
 div.headerlogo {
@@ -27,7 +28,7 @@ ul.headerlinks {
   justify-content: space-around;
   padding-left: 0px;
   /* width: 350px; */
-  color: #32322eca;
+  /* color: #32322eca; */
   margin-top: 45px;
   font-size: 1.05rem;
 }
@@ -42,7 +43,7 @@ ul.headerlinks li {
   /* border-bottom: 3px solid transparent; */
   padding-bottom: 8px;
   transition: border-bottom 0.2s, color 0.3s;
-  color: #32322ea8;
+  color: #5e5e57a1;
 }
 
 ul.headerlinks li:hover {
@@ -50,7 +51,7 @@ ul.headerlinks li:hover {
 }
 
 ul.headerlinks li.border {
-  border: 1px solid #32322e13;
+  border: 1px solid #32322e0a;
 }
 ul.headerlinks li.active {
   border-bottom: 3px solid #46b1ccb2 !important;
@@ -58,9 +59,8 @@ ul.headerlinks li.active {
 }
 ul.headerlinks li.underline {
   margin-top: 5px;
-  border-bottom: 3px solid transparent !important; 
+  border-bottom: 3px solid transparent !important;
 }
 ul.headerlinks li:hover {
   border-bottom: 3px solid #fff !important;
 }
-

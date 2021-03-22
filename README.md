@@ -48,3 +48,30 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     11). Start Footer
     12). Add see more text with opacity.
     13). Create ListItem Component for each Items
+    14). Text Darker and Larger.
+    15). Highlight Active Page Name Backgroundcolor in Header
+
+## Fixes
+    1) From https://github.com/vercel/next.js/issues/17464
+    
+    <!-- Start Of Fix
+    import Router from "next/router";
+
+    const routeChange = () => {
+    // Temporary fix to avoid flash of unstyled content
+    // during route transitions. Keep an eye on this
+    // issue and remove this code when resolved:
+    // https://github.com/vercel/next.js/issues/17464
+
+    const tempFix = () => {
+        const allStyleElems = document.querySelectorAll('style[media="x"]');
+        allStyleElems.forEach((elem) => {
+        elem.removeAttribute("media");
+        });
+    };
+    tempFix();
+    };
+
+    Router.events.on("routeChangeComplete", routeChange );
+    Router.events.on("routeChangeStart", routeChange );
+    // End Of Fix -->
