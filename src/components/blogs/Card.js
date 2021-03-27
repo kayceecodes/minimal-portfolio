@@ -1,7 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from "../../../styles/Blogs.module.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Card(props) {
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+    });
+  });
+
   return (
     <div className={styles.container}>
       <a href={props.blog.link}>
@@ -11,8 +19,24 @@ export default function Card(props) {
           </div>
           <div>
             <p className={styles.header}>
-              <span className={styles.title}>{props.blog.title}</span>
-              <small className={styles.date}>{props.blog.date}</small>
+              <div
+                className={styles.title}
+                style={{
+                  transition: "transform 0.55s, color 0.8s"
+                }}
+                data-aos="fade-up"
+              >
+                {props.blog.title}
+              </div>
+              <div
+                className={styles.date}
+                data-aos="fade-up"
+                style={{
+                  transition: "transform 0.55s",
+                }}
+              >
+                {props.blog.date}
+              </div>
             </p>
             <p className={styles.content}>
               I’ve seen many advanced React users make a claim against the

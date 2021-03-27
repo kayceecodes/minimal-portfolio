@@ -43,10 +43,14 @@
 .card div p.header .title {
   color: #40a1b9;
   transition: color 0.3s;
+  display: inline;
 }
 .card:hover div p.header .title {
   color: #40a1b9;
   text-shadow: 0px 0px 20px #5d5d5d65;
+}
+.card div p.header div.date {
+  display: inline;
 }
 .card p {
   letter-spacing: 0.5px;

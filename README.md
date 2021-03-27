@@ -50,6 +50,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     13). Create ListItem Component for each Items
     14). Text Darker and Larger.
     15). Highlight Active Page Name Backgroundcolor in Header
+    16). Edit Skills for readability programs
+    17). Add Linux to skill
+    18). Make font smaller in header and darker
 
 ## Fixes
     1) From https://github.com/vercel/next.js/issues/17464
@@ -75,3 +78,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     Router.events.on("routeChangeComplete", routeChange );
     Router.events.on("routeChangeStart", routeChange );
     // End Of Fix -->
+## Notes
+    Device.png attrs should be width 220 height 390
+    and /assets/images/backgrounds/devices.png
