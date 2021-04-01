@@ -29,17 +29,19 @@ export default function Footer() {
         />
         <ul data-aos="fade-up" className={styles.socialLinks}>
           {socialLinks.map((value) => (
-            <li key={value.name}>{value.component}</li>
+            <Link key={value.name} href={value.link}>
+              <li>{value.component}</li>
+            </Link>
           ))}
         </ul>
-        <p>
-          <small>Keith Carrillo 2021</small>
-        </p>
-        <p>
+        <div>
           <a href="mailto:justkeithcarr@gmail.com">Contact me</a>
           <Link href="/projects">Projects</Link>
-        </p>
-        <div className={styles.bottomBorder} />
+        </div>
+
+        <small>Keith Carrillo 2021</small>
+
+        {/* <div className={styles.bottomBorder} /> */}
       </div>
     </>
   );

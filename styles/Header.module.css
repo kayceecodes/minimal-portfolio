@@ -48,11 +48,11 @@ ul.headerlinks li {
   /* border-bottom: 3px solid transparent; */
   padding-bottom: 8px;
   transition: border-bottom 0.2s, color 0.3s;
-  color: #5e5e57d8;
+  color: #32322ed7;
 }
 
 ul.headerlinks li:hover {
-  color: #8a8a8281;
+  color: #32322e78;
 }
 
 ul.headerlinks li.border {
