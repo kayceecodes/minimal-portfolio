@@ -60,19 +60,21 @@ export default function Home(props) {
         <div className={styles.container}>
           <p>
             <span className={styles.greet}>Hey, I'm Keith Carrillo.</span>
-            <br />
-            <br />
+            <br /> <br />
             I'm passionate about team managment and eCommerce application
             experiences that could potentially have a great affect on many
             users.
-            <br />
-            <br />
+            <br /> <br />
             In my spare time I enjoy talking with other developers on twitter,
             learning and communicating about new trends or new solutions.
-            <br />
-            <br />
+            <br /> <br />
             I’m hoping to join a team that I can share ideas with, learn from,
             and potentially grow with as a team member.
+            <br /> <br />
+            The tech I'm using: 
+              <span className={styles.stack}>
+                 {" "}React Typescript Nextjs Jest Material-ui SQL & Postgres
+              </span>
             <ul className={styles.sociallinks}>
               {socialLinks.map((value) => (
                 <li

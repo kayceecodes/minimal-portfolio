@@ -55,6 +55,11 @@ span.greet {
   }
 }
 
+span.stack {
+  font-weight: 300;
+  color: #3f697eab;
+}
+
 .sociallinks {
   /* padding-left: 35px; */
   margin-top: 35px;
